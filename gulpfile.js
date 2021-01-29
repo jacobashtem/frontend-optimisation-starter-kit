@@ -71,7 +71,7 @@ gulp.task('sass', () => {
       .pipe(dependents())
       .pipe(sass())
       .pipe(autoprefixer())
-      //.pipe(minifyCss())
+      .pipe(minifyCss())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(dist_assets_folder + 'css'))
     .pipe(browserSync.stream());
