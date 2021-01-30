@@ -208,7 +208,7 @@ gulp.task(
   'build', 
   gulp.series(
     'clear', 
-    /*'html-minified'*/ 
+    'html-minified',
     'html', 
     'sass', 
     'less', 
@@ -219,9 +219,9 @@ gulp.task(
     'videos',
     'extra-files', 
     'images', 
-    /*'purgecss',*/
-    /*'generate-critical-css',*/
-    /*'generate-service-worker',*/
+    'purgecss',
+    'generate-critical-css',
+    'generate-service-worker',
   )
 );
 
